@@ -159,7 +159,7 @@ function Deliver() {
       <List className="mt-8">
         <ListItem title="Testing">
           Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+          if our tests weren\’t as porous as a sieve.
         </ListItem>
         <ListItem title="Infrastructure">
           To ensure reliability we only use the best Digital Ocean droplets that
@@ -242,7 +242,7 @@ export default function Process() {
         <p>
           We believe in efficiency and maximizing our resources to provide the
           best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          the same five projects we\’ve been developing for the past decade.
         </p>
       </PageIntro>
 
