@@ -1,4 +1,4 @@
-# Studio
+# MotStudio
 
 Website created for Motsinger Dev using Nextjs and Tailwindcss
 ## Getting started
@@ -19,11 +19,11 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 ## Customizing
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+You can start editing this template by modifying the files in the `/app` folder. The site will auto-update as you edit these files.
 
 ## License
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+This site template is a commercial product and is licensed under the Motsinger UI license
 
 ## Learn more
 
