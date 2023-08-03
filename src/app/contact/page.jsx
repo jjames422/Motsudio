@@ -1,4 +1,6 @@
-import { useId } from 'react'
+'use client';
+
+import { useId, useState } from 'react'
 import Link from 'next/link'
 
 import { Border } from '@/components/Border'
@@ -11,7 +13,6 @@ import { SocialMedia } from '@/components/SocialMedia'
 
 function TextInput({ label, ...props }) {
   let id = useId()
-
   return (
     <div className="group relative z-0 transition-all focus-within:z-10">
       <input
@@ -45,6 +46,33 @@ function RadioInput({ label, ...props }) {
 }
 
 function ContactForm() {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [company, setCompany] = useState();
+  const [phoneNum, setPhoneNum] = useState();
+  const [message, setMessage] = useState();
+  const [budget, setBudget] = useState();
+  const [success, setSuccess] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    console.log('working together...')
+
+    const submit = await fetch('/api/email', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        company: company
+      })
+    })
+
+    console.log(submit)
+    if(submit) {
+      setSuccess('Thank you for your submission.')
+    }
+  }
+
   return (
     <FadeIn className="lg:order-last">
       <form>
@@ -52,20 +80,22 @@ function ContactForm() {
           Work inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
+          <TextInput label="Name" name="name" autoComplete="name" onChange={e => setName(e.target.value)}/>
           <TextInput
             label="Email"
             type="email"
             name="email"
             autoComplete="email"
+            onChange={e => setEmail(e.target.value)}
           />
           <TextInput
             label="Company"
             name="company"
             autoComplete="organization"
+            onChange={e => setCompany(e.target.value)}
           />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
+          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" onChange={e => setPhoneNum(e.target.value)} />
+          <TextInput label="Message" name="message" onChange={e => setMessage(e.target.value)}/>
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Budget</legend>
@@ -78,9 +108,10 @@ function ContactForm() {
             </fieldset>
           </div>
         </div>
-        <Button type="submit" className="mt-10">
+        <Button type="submit" className="mt-10" onClick={handleSubmit}>
           Let’s work together
         </Button>
+        <p className="text-green-500 text-md italic mt-6">{success}</p>
       </form>
     </FadeIn>
   )
@@ -133,10 +164,10 @@ function ContactDetails() {
   )
 }
 
-export const metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
-}
+// export const metadata = {
+//   title: 'Contact Us',
+//   description: 'Let’s work together. We can’t wait to hear from you.',
+// }
 
 export default function Contact() {
   return (
