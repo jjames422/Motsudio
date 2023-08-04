@@ -181,7 +181,7 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             We are developer Motstudio working at the intersection of design and
-            technology. It\’s a really busy intersection though — a lot of our
+            technology. It’s a really busy intersection though — a lot of our
             staff have been involved in hit and runs.
           </p>
         </FadeIn>
@@ -196,7 +196,7 @@ export default async function Home() {
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
         The team at Motstudio went above and beyond with our onboarding, even
-        finding a way to access the user\’s microphone without triggering one of
+        finding a way to access the user’s microphone without triggering one of
         those annoying permission dialogs.
       </Testimonial>
 
