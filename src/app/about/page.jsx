@@ -71,7 +71,7 @@ const team = [
       },
       {
         name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
+        role: 'CMO',
         image: { src: imageDriesVincent },
       },
     ],
