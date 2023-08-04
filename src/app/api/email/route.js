@@ -13,7 +13,7 @@ export async function POST(request) {
     const options = {
         from: 'khalelogram0118@gmail.com',
         to: email,
-        subject: 'Contact Us Form Submission - MotStudio',  
+        subject: 'Contact Us Form Submission - MotMotstudio',  
         html: emailHtml,
     };
 

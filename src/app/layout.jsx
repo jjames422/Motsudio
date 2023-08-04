@@ -4,8 +4,8 @@ import '@/styles/tailwind.css'
 
 // export const  = {
 //   title: {
-//     template: '%s - Motstudio',
-//     default: 'Motstudio - Award winning developer studio based in Charlotte',
+//     template: '%s - MotMotstudio',
+//     default: 'MotMotstudio - Award winning developer Motstudio based in Charlotte',
 //   },
 // }
 

@@ -125,7 +125,7 @@ export function Footer() {
             <Logo className="h-8 px-4" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Motstudio Agency Inc. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

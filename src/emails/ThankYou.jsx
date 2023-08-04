@@ -57,7 +57,7 @@ import {
               target="_blank"
               style={{ ...link, color: '#898989' }}
             >
-              Motstudio
+              MotMotstudio
             </Link>
             , lorem ipsum dolor
             <br />

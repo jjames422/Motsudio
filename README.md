@@ -1,4 +1,4 @@
-# MotStudio
+# MotMotstudio
 
 Website created for Motsinger Dev using Nextjs and Tailwindcss
 ## Getting started
