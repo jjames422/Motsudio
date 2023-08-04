@@ -61,12 +61,12 @@ const team = [
     people: [
       {
         name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
+        role: 'COO',
         image: { src: imageLeslieAlexander },
       },
       {
         name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
+        role: 'CTO',
         image: { src: imageMichaelFoster },
       },
       {
