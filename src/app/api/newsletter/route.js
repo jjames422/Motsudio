@@ -1,19 +1,19 @@
 import { render } from '@react-email/render';
 import sendgrid from '@sendgrid/mail';
-import ThankYou from '../../../emails/ThankYou';
 import { NextResponse } from 'next/server';
+import NewsletterReply from '@/emails/NewsletterReply';
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 export async function POST(request) {
-    const {email, company, name} = await request.json();
+    const {email} = await request.json();
     
-    const emailHtml = render(<ThankYou email={email} company={company} name={name} />);
+    const emailHtml = render(<NewsletterReply email={email} />);
 
     const options = {
         from: 'khalelogram0118@gmail.com',
         to: email,
-        subject: 'Contact Us Form Submission - MotMotstudio',  
+        subject: 'Newsletter Subscription - MotMotstudio',  
         html: emailHtml,
     };
 

@@ -4,6 +4,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
+import { useState } from 'react';
 
 const navigation = [
   {
@@ -79,6 +80,27 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
+
+  const [email, setEmail] = useState();
+  const [success, setSuccess] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    console.log('working together...')
+
+    const submit = await fetch('/api/newsletter', {
+      method: 'POST',
+      body: JSON.stringify({
+        email: email
+      })
+    })
+
+    if(submit.ok) {
+      setSuccess('Thank you for subscribing to our newsletter.');
+      setEmail('');
+    }
+  }
+
   return (
     <form className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
@@ -95,17 +117,21 @@ function NewsletterForm() {
           autoComplete="email"
           aria-label="Email address"
           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
+          onChange={e => setEmail(e.target.value)}
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
             type="submit"
             aria-label="Submit"
             className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
+            onClick={handleSubmit}
           >
             <ArrowIcon className="w-4" />
           </button>
         </div>
       </div>
+      <p className="text-green-500 text-md italic mt-6">{success}</p>
+
     </form>
   )
 }

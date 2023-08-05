@@ -17,13 +17,13 @@ import {
 //     ? `https://${process.env.VERCEL_URL}`
 //     : '';
   
-  export const ThankYou = ({email, name}) => (
+  export const NewsletterReply = ({email}) => (
     <Html>
       <Head />
-      <Preview>Thank you and our team will get back to you ASAP.</Preview>
+      <Preview>Thank you for Susbscribing</Preview>
       <Body style={main}>
         <Container style={container}>
-          <Heading style={h1}>Thank you for reaching out to us {name}!</Heading>
+          <Heading style={h1}>Thank you for subscribing to our newsletter</Heading>
           <Link
             href="https://motstudio.dev"
             target="_blank"
@@ -43,7 +43,7 @@ import {
               marginBottom: '16px',
             }}
           >
-           Our Team will respond to you in the next 24 hours to discuss further your projects/needs. We will reach out to you here in your email {email}.
+            By susbscribing to our newsletter, you will receive our newsletters and updates from our latest projects and articles on recent trends.
           </Text>
           {/* <Img
             src={`${baseUrl}/static/notion-logo.png`}
@@ -66,7 +66,7 @@ import {
     </Html>
   );
   
-  export default ThankYou;
+  export default NewsletterReply;
   
   const main = {
     backgroundColor: '#ffffff',

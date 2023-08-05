@@ -67,8 +67,8 @@ function ContactForm() {
       })
     })
 
-    console.log(submit)
-    if(submit) {
+    console.log("check",submit.ok)
+    if(submit.ok) {
       setSuccess('Thank you for your submission.');
       setEmail('');
       setName('');
