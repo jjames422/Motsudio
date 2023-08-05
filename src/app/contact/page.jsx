@@ -69,7 +69,12 @@ function ContactForm() {
 
     console.log(submit)
     if(submit) {
-      setSuccess('Thank you for your submission.')
+      setSuccess('Thank you for your submission.');
+      setEmail('');
+      setName('');
+      setBudget('');
+      setPhoneNum('');
+      setMessage('');
     }
   }
 

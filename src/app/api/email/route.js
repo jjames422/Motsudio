@@ -17,6 +17,8 @@ export async function POST(request) {
         html: emailHtml,
     };
 
+    const send = await sendgrid.send(options);
+    
     return NextResponse.json({
         status: 'Ok'
     })
