@@ -1,0 +1,57 @@
+import logo from '@/images/clients/phobia/logomark-dark.svg'
+import imageHero from './hero.png'
+import imageHelenaSteinmann from './Helena_Steinmann.png'
+
+
+
+export const caseStudy = {
+  client: 'Puma Swiss',
+  title: 'AI-Driven Product Content Optimization for Puma',
+  description:
+    'Puma revolutionized their e-commerce platform through AI-driven content generation, leading to a substantial increase in user engagement and a 20% uplift in sales of products with AI-optimized descriptions.',
+  summary: [
+    ,
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-06',
+  service: 'App development',
+  testimonial: {
+    author: { name: 'Helena Steinmann', role: 'Switzerland' },
+    content:
+      'Working with Motstudio has marked a milestone in Puma's digital transformation journey.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Motstudio and Puma teamed up to introduce AI-driven product content on Puma's e-commerce site, leading to significantly improved user engagement and sales. The innovative solution demonstrated how AI technology can successfully enhance online shopping experiences and drive commercial growth.
+## What we did
+
+<TagList>
+  <TagListItem>Android</TagListItem>
+  <TagListItem>iOS</TagListItem>
+  <TagListItem>Malware</TagListItem>
+  <TagListItem>VR</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Helena_Steinmann', role: 'CPO of Phobia' }}
+  image={{ src: imageHelenaSteinmann }}
+>
+  The team at MotMotstudio went above and beyond with our onboarding, even finding a
+  way to access the user’s microphone without triggering one of those annoying
+  permission dialogs.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="20%" label="Churn rate" />
+  <StatListItem value="5x" label="Uninstalls" />
+  <StatListItem value="2.3" label="App store rating" />
+  <StatListItem value="8" label="Pending lawsuits" />
+</StatList>
