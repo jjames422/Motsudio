@@ -38,16 +38,16 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+            Our team has been with us since the beginning because we believe build better technology
+            starts with investing in our employees first.
           </GridListItem>
           <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+           Listening to our employees allowed us to craft amazing site for some top tier company's by
+           embracing remote opprotunities for our staff.
           </GridListItem>
           <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+            Listen. That is the first step in showing your team how you care about their daily lives 
+            inside, and outside of the work place.
           </GridListItem>
         </GridList>
       </Container>
@@ -195,17 +195,18 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Motstudio was started by three friends who noticed that developer
-            Motstudios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+          At Motstudio, we don't just build technology; we craft digital masterpieces. Recognized as one of the foremost technology studios globally, our reputation has been sculpted over years of commitment, innovation, and an unwavering pursuit of excellence.
+            </p>
+          <p>Our essence lies in our dedication to premium standards. Each line of code penned, every user interface designed, and every system integrated reflects a meticulous attention to detail, setting us apart in a world where the ordinary often prevails. Our team, composed of luminaries and tech aficionados, approaches every project with a unique blend of cutting-edge technological prowess and creative ingenuity.
           </p>
-          <p>
-            At Motstudio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+          <p>We're not just about delivering solutions; we aim to create digital experiences that resonate. And it's this drive that has led to collaborations with some of the most visionary brands and forward-thinking enterprises. Our clients choose Motstudio because they seek more than just a service; they seek a partnership that promises reliability, quality, and a touch of the extraordinary.
           </p>
+          <p>Choosing Motstudio means choosing unparalleled technological craftsmanship, premium quality, and a commitment to pushing the boundaries of what's possible.
+          </p>
+          Join us in our journey of setting the gold standard in technology and design. Because at Motstudio, we believe in crafting tomorrow, today.
+                      
+    
+     
         </div>
       </PageIntro>
       <Container className="mt-16">
