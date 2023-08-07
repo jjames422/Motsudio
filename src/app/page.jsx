@@ -124,6 +124,7 @@ function Services() {
         <p>
           As long as those opportunities involve giving us money to re-purpose
           old projects — we can come up with an endless number of those.
+          <p><i>These are obviously jokes</i></p>
         </p>
       </SectionIntro>
       <Container className="mt-16">
