@@ -4,7 +4,8 @@ import '@/styles/tailwind.css'
 
  export const metadata  = {
      title: {   template: '%s - MotMotstudio',
-     default: 'MotMotstudio - Award winning developer Motstudio based in Charlotte',
+     default: 'Motstudio - Award winning developer Motstudio based in Charlotte',
+     
    },
  }
 

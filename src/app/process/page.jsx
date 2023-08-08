@@ -48,24 +48,25 @@ function Discover() {
     <Section title="Discover" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          Through Immersive Understanding, we chart out any strategy and dive deep into your business {' '}
+          <strong className="font-semibold text-neutral-950">DNA.</strong> We aim to understand not 
+          just the 'what' but the 'why' of your brand, allowing us to align our strategies seamlessly 
+          with your core objectives
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+        Our team will conduct Industry Research. The digital world is dynamic, 
+        and what worked yesterday might not be the solution today. We keep our 
+        ingers on the pulse of current industry trends, ensuring that {' '}  
+        <strong className="font-semibold text-neutral-950">your</strong> strategies are relevant 
+        and ahead of the curve.
+          
+        
         </p>
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+        Who are you speaking to? We employ sophisticated tools and {' '}  
+        <strong className="font-semibold text-neutral-950">customer persona building</strong> techniques to sketch
+        out detailed customer personas, giving us clear insights into your target 
+        audience's desires, pain points, and motivations.
         </p>
       </div>
 
@@ -75,10 +76,10 @@ function Discover() {
       <TagList className="mt-4">
         <TagListItem>In-depth questionnaires</TagListItem>
         <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
+        <TagListItem>Budget Analysis</TagListItem>
+        <TagListItem>Barriers to entry</TagListItem>
         <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Technology Barriers</TagListItem>
       </TagList>
     </Section>
   )
@@ -91,21 +92,19 @@ function Build() {
         <p>
           Based off of the discovery phase, we develop a comprehensive roadmap
           for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          intricatal phase in keeping your project on task.
         </p>
         <p>
           Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          communication open and progess the project.
+          They will be the direct line of contact to the
+          development team who are hard at work scouring writing source code
+          for your project(s).
         </p>
         <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          Our account managers and technical project managers are trained to  
+          engange in any change request as offten as the project allows. Therefore, 
+          always keeping youup to date with your project, and advoiding scope creep.
         </p>
       </div>
 
@@ -113,8 +112,8 @@ function Build() {
         author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
         className="mt-12"
       >
-        Motstudio were so regular with their progress updates we almost began to
-        think they were automated!
+        Motstudio keet us in the loop with all the requirments. The TPM 
+        held meetings with us to help us understand in what stage the project was.
       </Blockquote>
     </Section>
   )
@@ -241,8 +240,7 @@ export default function Process() {
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
           We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we\’ve been developing for the past decade.
+          best value to our clients.At the heart of our ethos lies a deep-rooted commitment to efficiency, ensuring that every resource is optimized for maximum impact. This unwavering dedication not only allows us to streamline operations but also enables us to deliver unparalleled value to our esteemed clients consistently. By meticulously harnessing our resources and capabilities, we ensure that our clients receive top-notch solutions that are both cost-effective and of the highest quality. 
         </p>
       </PageIntro>
 
