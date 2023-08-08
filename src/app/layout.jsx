@@ -7,6 +7,7 @@ import '@/styles/tailwind.css'
      default: 'Motstudio - Award winning developer Motstudio based in Charlotte',
      generator: 'Next.js',
      applicationName: 'Motstudio',
+     metadataBase: new URL('https://motstudio.dev'),
      keywords: ['AI-driven web development',
      'Expert web development services',
      'VPS hosting solutions',
@@ -35,8 +36,33 @@ import '@/styles/tailwind.css'
      authors: [{ name: 'Jonathan James', url: 'https://motstudio.dev' }],
      colorScheme: 'light',
      creator: 'Jonathan M. James',
+     verification: {
+      google: 'google',
+      yandex: 'yandex',
+      yahoo: 'yahoo',
+      bing: 'bing',
+      
+     
+     languages: {
+      'en-US': '/en-US',
+     
+      robots: {
+        index: false,
+        follow: true,
+        nocache: true,
+        googleBot: {
+          index: true,
+          follow: false,
+          noimageindex: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
+      },
    },
- }
+ },
+},
+}
 
 export default function Layout({ children }) {
   return (
