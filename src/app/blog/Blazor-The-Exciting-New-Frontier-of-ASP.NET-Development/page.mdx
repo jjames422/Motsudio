@@ -1,0 +1,180 @@
+import imageJonathan from '@/images/team/jonathan.png'
+import CodeBlockWithCopy from '../CodeBlockWithCopy'
+
+export const article = {
+  date: '2023-08-7',
+  title: 'Blazor: The Exciting New Frontier of ASP.NET Development',
+  description:
+    'Dive into Blazor, Microsoft\'s revolutionary ASP.NET framework, and discover how it\'s reshaping the landscape of web development by empowering developers to build interactive web UIs using C# instead of JavaScript.',
+  author: {
+    name: 'Jonathan M. James',
+    role: 'Founder & CEO',
+    image: { src: imageJonathan },
+  },
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+## Blazor: The Exciting New Frontier of ASP.NET Development
+
+You've been building web apps for years, happily churning out ASP.NET MVC sites and Web API services. But lately, you've been hearing rumblings about something new in the ASP.NET world called Blazor. What is it and why should you care? Blazor lets you build interactive web UIs using C# instead of JavaScript. 
+
+Yes, you read that right - C# in the browser! No more struggling with JavaScript and its quirks. You can leverage your existing .NET skills and libraries to build web frontends. Blazor works by compiling your C# code into WebAssembly and running it client-side. 
+
+The end result is a seamless, robust web UI experience. If you're an ASP.NET developer, Blazor is worth getting excited about. It could change the way you think about building web apps.
+
+![](./aspnet.jpeg)
+
+## What Is Blazor and Why Should You Care?
+
+Blazor is Microsoft’s exciting new framework for building interactive client-side web apps using C# and .NET. Unlike traditional single page applications (SPAs) that run JavaScript in the browser, Blazor apps run on the server and compile C# code into web assembly before executing it in the browser.
+
+Why should you care? A few reasons:
+
+•You can leverage your existing .NET skills. Build web UIs using C# instead of JavaScript. No need to learn a new language or framework.
+
+•Blazor provides a robust component model. Just like building UIs in React or Vue.js, you can define self-contained components with their own logic and UI.
+
+•State management is built-in. Blazor has a mechanism for sharing state between components called Razor components. No need for a third-party state management library.
+
+•It works with .NET Core. Blazor works seamlessly with ASP.NET Core web APIs and shares many of the same configuration, logging, dependency injection, and middleware options.
+
+•Two hosting models: Blazor can run your UI logic on the server or in the browser. Server-side Blazor is production ready today. Client-side Blazor (running .NET in WebAssembly) is still experimental but promising.
+
+•Rich ecosystem of .NET libraries. Access thousands of high-quality .NET libraries from Blazor apps.
+
+•Visual Studio and Visual Studio Code support. Microsoft’s IDEs have built-in support for creating, debugging, building and deploying Blazor web apps.
+
+Blazor is an exciting innovation that lets you leverage your existing .NET skills to build interactive web UIs. While still relatively new, Blazor shows a lot of promise for the future of web development with .NET. Keep an eye on this emerging framework!
+
+## How Blazor Uses .NET and the Browser
+
+Blazor is an exciting new framework that allows you to build interactive web UIs using C# and .NET instead of JavaScript. Blazor apps run directly in the browser, leveraging WebAssembly.
+
+### How Blazor Uses .NET and the Browser
+
+lazor has two hosting models: client-side and server-side. In client-side Blazor, your app is executed directly in the browser. The .NET code is compiled into WebAssembly and runs natively in the browser. In server-side Blazor, the .NET code is executed on the server and UI updates are handled over a SignalR connection.
+
+With client-side Blazor, you write C# code and Razor markup just like in an ASP.NET MVC app. But instead of the code executing on the server, it’s compiled into WebAssembly and runs in the browser. This allows you to utilize the robustness of .NET and C# to build interactive UIs in a way never before possible for web applications.
+
+The major benefit of Blazor is that you can leverage your existing .NET skills and share code between server and client. You have access to the full .NET Framework and can use NuGet packages in your Blazor apps. Complex web UI logic can be written entirely in C# without ever touching JavaScript.
+
+Blazor is still experimental but shows a lot of promise for building web UIs with C# and .NET. If you’re interested in the cutting edge of web development with ASP.NET, Blazor is worth checking out. The future of web UI development in .NET is exciting, and Blazor leads the way.
+
+## Building a Blazor App: Components, Routing and Data Binding
+
+To build a Blazor app, you'll need to get familiar with a few key concepts: components, routing, and data binding.
+
+Components are reusable elements of UI that can be nested, shared, and parameterized. They're made up of an HTML template, a C# class to handle logic, and a combination of the two known as a razor component. You define components in .razor files in the Pages folder of your Blazor app.
+
+Routing in Blazor allows you to create separate pages (components) and navigate between them. You define routes in the App.razor file. A basic route setup would be:
+
+
+<CodeBlockWithCopy language="html">
+{`
+<Found Context="routeData">
+    <RouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)" />
+</Found>
+<NotFound>
+    <LayoutView Layout="typeof(MainLayout)">
+        <p>Sorry, there's nothing at this address.</p>
+    </LayoutView>
+</NotFound>
+`}
+</CodeBlockWithCopy>
+
+Data binding in Blazor allows you to sync data between your C# logic and the UI. For example, you can bind a `<input>` element to a C# variable, and as the variable changes, the DOM element will update automatically.
+
+Some examples of data binding in Blazor:
+
+*   One-way binding: `@someVariable` - Displays the variable, updates if it changes
+    
+*   Two-way binding: `<input @bind="someVariable" />` - Updates the variable when the input changes, and vice versa
+    
+*   Event binding: `<button @onclick="DoSomething">Click me</button>` - Calls the `DoSomething` method when the button is clicked
+    
+
+By understanding components, routing, and data binding in Blazor, you'll be well on your way to building interactive web UIs with C#! The future is bright for web development in .NET.
+
+## Communicating With the Server in a Blazor App
+
+In a Blazor app, you'll need to communicate with a server to access data or call server-side logic. Blazor offers a few ways to do this:
+
+### RESTful HTTP API
+
+You can call a REST API from a Blazor app the same way you would from any web app. Make requests to API endpoints using the HttpClient class in .NET to GET, POST, PUT, and DELETE data.
+
+### Razor Components
+
+For server-side Blazor apps, you can define Razor components (.razor files) that execute .NET code on the server. These components have access to the full .NET API and can query databases or call other server-side logic. The rendered HTML is sent to the client.
+
+### Event Handlers
+
+You can define C# event handlers for events in a Blazor app that will execute on the server. For example:
+<CodeBlockWithCopy language="csharp">
+{`
+void OnClick()
+{
+    // Executes on server
+}
+Click Me
+`}
+</CodeBlockWithCopy>
+
+The OnClick method will run on the server when the button is clicked in the browser.
+
+
+### Dependency Injection
+
+Blazor supports dependency injection, so you can inject services into your Blazor components that execute logic on the server. For example:
+<CodeBlockWithCopy language="csharp">
+{`
+@inject MyDatabaseService DatabaseService
+
+protected override void OnInitialized()
+{
+    var customers = DatabaseService.GetCustomers();
+}
+`}
+</CodeBlockWithCopy>
+
+The DatabaseService can run queries on the server, with the results used in the Blazor component.
+
+Using these techniques, you have a lot of flexibility in how you architect server communication in your Blazor apps. You can build truly full-stack web applications with C# and .NET using Blazor.
+
+## The Future of Blazor: Exciting Updates on the Horizon
+
+Blazor has an exciting roadmap with new features on the horizon that will make web development with C# even more powerful. Some of the updates coming soon to Blazor include:
+
+### Hot Reload
+
+Hot Reload allows you to make changes to your Blazor app while it’s running and see the updates instantly without having to rebuild the entire app. This significantly speeds up development and debugging. Hot Reload is already available for Blazor Server apps and coming soon to Blazor WebAssembly.
+
+### JavaScript Interop Improvements
+
+Blazor’s JavaScript interop will allow you to invoke JavaScript functions from .NET and .NET methods from JavaScript. Improvements coming will make interop even easier with support for lambda expressions and default parameters in .NET methods exposed to JavaScript.
+
+### Performance Improvements
+
+The Blazor team is continuously working to improve the framework’s performance. Some of the performance optimizations on the roadmap include:
+
+•Faster compilation for Blazor WebAssembly apps.
+
+•Improved download size for Blazor WebAssembly by stripping out unused IL (Intermediate Language) code.
+
+•Faster rendering by optimizing how DOM diffs are calculated and how the UI is updated.
+
+•Support for prerendering Blazor Server apps to improve initial load time.
+
+### Native Mobile Apps with Blazor
+
+One of the most exciting announcements is the ability to use Blazor to build native mobile apps for iOS and Android using .NET MAUI (Multi-platform App UI). This will allow you to leverage your Blazor skills to build mobile apps in addition to web apps.
+
+The future of Blazor is bright. With a robust roadmap of new features and performance improvements on the way, Blazor aims to become an even more powerful and compelling framework for building web UIs with C# and .NET. The flexibility to build for web, mobile and desktop from a single codebase is an enormous benefit for .NET developers.
+
+## Conclusion
+
+So there you have it - an introduction to Blazor and why you should be paying attention to this exciting new frontier of ASP.NET development. With Blazor, you can leverage your C# and .NET skills to build interactive web UIs using WebAssembly. No more clunky JavaScript just to make a simple form or grid - you can do it all in C#. And since it's built on open web standards, your Blazor apps will work across all modern browsers and devices. If you're an ASP.NET developer, now is the time to start learning Blazor. Jump in, build some samples, and see the power of C# in the browser for yourself. The future is bright for web development in the .NET ecosystem, and Blazor is leading the way. What are you waiting for? Go build something amazing!
