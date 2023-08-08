@@ -124,12 +124,13 @@ function Deliver() {
     <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
+        We pride ourselves on ensuring that the final product aligns perfectly with our client's 
+        vision and exceeds their expectations. Our meticulous approach ensures that every detail 
+        is {' '} 
           <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          fine-tuned </strong>
+          and {' '}
+          <strong className="font-semibold text-neutral-950">polished.</strong>
         </p>
         <p>
           Despite largely using pre-built components, most of the{' '}
@@ -139,16 +140,13 @@ function Deliver() {
           reality demos that go viral on Twitter.
         </p>
         <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+        We understand that in the digital age, delivery isn't just about handing over a 
+        {' '}; 
+        <strong className="font-semibold text-neutral-950"> product </strong>{' '}
+        it's about ensuring its scalability, reliability, and sustainability. 
+        As we complete our projects, we ensure they are primed for future growth and changes. 
+        Our team stays abreast of evolving industry trends, allowing us to deliver contemporary 
+        solutions that stand the test of time.
         </p>
       </div>
 
@@ -157,16 +155,21 @@ function Deliver() {
       </h3>
       <List className="mt-8">
         <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren\’t as porous as a sieve.
+          Our projects always undergo testing to ensure that they are functional throught the development and 
+          User Application Testing (UAT).
         </ListItem>
         <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+          To ensure reliability we use the best Infrastructure that we can find, our own. 
+          With a 99.9% SLA - you can't find a better hosting provider.
         </ListItem>
         <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+          With every project there is a support team that will be available to answer any questions you may have.
+          We also will discuss any ongoing maintenance that may be needed with yrgency.
+        </ListItem>
+        <ListItem title="Documentation">
+          We will always provide detailed documentation to ensure that your project is  
+          {' '}
+          <strong className="font-semibold text-neutral-950">fully</strong> your team.
         </ListItem>
       </List>
     </Section>
@@ -174,6 +177,16 @@ function Deliver() {
 }
 
 function Values() {
+  const valuesList = [
+    {title: 'Innovation', description: 'At Motstudio, we believe in constantly pushing boundaries. Every project is a chance for us to redefine the limits of creativity and technology.' },
+    { title: 'Client Collaboration', description: 'We value our partnerships with clients. Their vision and feedback are integral to crafting solutions that truly resonate.' },
+    { title: 'Excellence in Execution', description: "We pride ourselves on attention to detail. It's not just about completing a project; it's about achieving excellence in every facet." },
+    { title: 'Sustainable Solutions', description: 'We think long-term. Our designs and solutions are built to last, keeping future growth and adaptability in mind.' },
+    { title: 'Integrity & Transparency', description: 'Our clients trust us because we work with honesty and transparency. Every step, every decision is communicated and clarified.' },
+    { title: 'Continuous Learning', description: 'The digital landscape is ever-evolving. We commit to continuous learning to stay at the forefront of industry innovations.' },
+    { title: 'Empowerment', description: 'We empower our team to bring their best ideas forward, fostering an environment of mutual respect and growth.' },
+    { title: 'Social Responsibility', description: 'We believe in giving back. Motstudio is dedicated to various social initiatives, ensuring we do our bit for the larger community.' }
+];
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
@@ -189,44 +202,26 @@ function Values() {
       >
         <p>
           We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          technologies, while consentrating on security. We stand by our core values
+          to guide us on this decsion. 
         </p>
       </SectionIntro>
-
+      
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+        {valuesList.map((item) => (
+          <GridListItem key={item.key} title={item.title}>
+            {item.description}
           </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
-          </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
-          </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
-          </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
-          </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
-          </GridListItem>
+        ))}
         </GridList>
       </Container>
-    </div>
+      </div>
   )
 }
+  
+
+
 
 export const metadata = {
   title: 'Our Process',
