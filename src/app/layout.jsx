@@ -2,12 +2,11 @@ import { RootLayout } from '@/components/RootLayout'
 
 import '@/styles/tailwind.css'
 
-// export const  = {
-//   title: {
-//     template: '%s - MotMotstudio',
-//     default: 'MotMotstudio - Award winning developer Motstudio based in Charlotte',
-//   },
-// }
+ export const metadata  = {
+     title: {   template: '%s - MotMotstudio',
+     default: 'MotMotstudio - Award winning developer Motstudio based in Charlotte',
+   },
+ }
 
 export default function Layout({ children }) {
   return (
