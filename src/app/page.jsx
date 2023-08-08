@@ -122,8 +122,7 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        Navigate the future confidently, leveraging our expertise to illuminate hidden 
-        potentials and turn them into actionable strategies.
+        Navigate the future confidently, leveraging our expertise to illuminate hidden potentials and turn them into actionable strategies.
         
         </p>
       </SectionIntro>
@@ -173,7 +172,7 @@ export const metadata = {
 }
 
 export default async function Home() {
-  let caseStudies = (await loadMDXMetadata('work')).slice(0, 3)
+  let caseStudies = (await loadMDXMetadata('work')).slice(1, 5)
 
   return (
     <>
