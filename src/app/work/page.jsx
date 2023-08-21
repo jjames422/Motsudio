@@ -147,9 +147,7 @@ export default async function Work() {
         title="Proven solutions for real-world problems."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+        We believe in efficiency and maximizing our resources to provide the best value to our clients. By consistently optimizing our processes and leveraging cutting-edge technology, we ensure every project is executed precisely and excellently. Our commitment to delivering top-notch solutions reflects our dedication to client satisfaction. Through proactive collaboration and a deep understanding of our client's needs, we tailor our services to provide results that meet and often exceed expectations.
         </p>
       </PageIntro>
 
