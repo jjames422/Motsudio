@@ -8,35 +8,31 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-
 import logoPyTorch from '@/images/technology/pytorch/pytorch-light.svg'
 import logoRedis from '@/images/technology/redis/redis-light.svg'
+import logoAngular from '@/images/technology/angular/angular-light.svg'
+import logoFirebase from '@/images/technology/firebase/firebase-light.svg'
+import logoNextjs from '@/images/technology/nextjs/next-js-light.svg'
+import logoShopify from '@/images/technology/shopify/shopify-light.svg'
+import logoReact from '@/images/technology/react/react-light.svg'
+import logoVue from '@/images/technology/vuejs/vuejs-light.svg'
+
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
-const clients = [
 
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
-]
 
 const tech = [
  
   ['PyTorch', logoPyTorch],
   ['Redis', logoRedis],
+  ['Angular', logoAngular],
+  ['Firebase', logoFirebase],
+  ['Next.js', logoNextjs],
+  ['Shopify', logoShopify],
+  ['React', logoReact],
+  ['Vue', logoVue],
  
 ]
 
@@ -58,7 +54,7 @@ function Tech() {
             {tech.map(([tech, logo]) => (
               <li key={tech}>
                 <FadeIn>
-                  <Image src={logo} alt={tech} unoptimized />
+                  <Image src={logo} alt={tech} height={70} unoptimized />
                 </FadeIn>
               </li>
             ))}
