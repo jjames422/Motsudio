@@ -34,7 +34,7 @@ import '@/styles/tailwind.css'
      'JavaScript',
      'typescript',
     ],
-     authors: [{ name: 'Jonathan James', url: 'https://motstudio.dev' }],
+     authors: [{ name: 'Jonathan M. James', url: 'https://motstudio.dev' }],
      colorScheme: 'light',
      creator: 'Jonathan M. James',
      verification: {

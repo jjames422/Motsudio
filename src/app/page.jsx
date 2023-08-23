@@ -17,12 +17,14 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+
+import logoPyTorch from '@/images/technology/pytorch/pytorch-light.svg'
+import logoRedis from '@/images/technology/redis/redis-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
+
   ['Unseal', logoUnseal],
   ['Mail Smirk', logoMailSmirk],
   ['Home Work', logoHomeWork],
@@ -31,13 +33,20 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
-function Clients() {
+const tech = [
+ 
+  ['PyTorch', logoPyTorch],
+  ['Redis', logoRedis],
+ 
+]
+
+function Tech() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            Technologies We Use
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -46,10 +55,10 @@ function Clients() {
             role="list"
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
-            {clients.map(([client, logo]) => (
-              <li key={client}>
+            {tech.map(([tech, logo]) => (
+              <li key={tech}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={tech} unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -172,24 +181,24 @@ export const metadata = {
 }
 
 export default async function Home() {
-  let caseStudies = (await loadMDXMetadata('work')).slice(1, 5)
+  let caseStudies = (await loadMDXMetadata('work')).slice(0,8)
 
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Award winning developer Motstudio based in Charlotte.
+            Award winning developer studio based in Charlotte.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are developer Motstudio working at the intersection of design and
+            We are developer studio working at the intersection of design and
             technology. It’s a really busy intersection though — a lot of our
             staff have been involved in hit and runs.
           </p>
         </FadeIn>
       </Container>
 
-      <Clients />
+      <Tech />
 
       <CaseStudies caseStudies={caseStudies} />
 
