@@ -1,0 +1,120 @@
+
+import CodeBlockWithCopy from '@/components/CodeBlockWithCopy'
+import imageChelsea from '@/images/team/chelsea-hagon.jpeg'
+
+export const article = {
+    date: '2023-08-24',
+    title: 'Remix vs. Next.js: Choosing the Best for Your Shopify Store',
+    description: "A detailed comparison between the popular React frameworks, Remix and Next.js, for building a Shopify storefront. Dive deep into their features and determine which is the right choice for your e-commerce project.",
+    author: {
+      name: 'Chelsea Hagon',
+      role: 'Senior Developer',
+      image: { src: imageChelsea },
+    },
+}
+
+
+## Remix vs Next.js: Which One is Best for Shopify?
+
+
+
+
+# Building a Shopify storefront with React
+
+Building a Shopify storefront has become increasingly streamlined with the rise of React frameworks. The dilemma now isn't about how to create a store, but which framework to leverage for optimal performance and efficiency. In today's discourse, we will deeply delve into the two prominent React frameworks: **Remix** and **Next.js**, and give you a comparative insight to make an informed decision for your Shopify venture.
+
+## What is Remix?
+
+**Remix** is not just another React framework; it's the embodiment of modern web development paradigms. Tailored for speed and efficiency, Remix aids in creating web applications that stand out in a crowded digital space.
+
+The unique proposition of Remix lies in its "zero-config routing", which, as the name suggests, lets you craft dynamic routes without a single line of additional code. But that's not all! Let's have a look at some features that make Remix an appealing choice:
+
+- **Hot Reloading**: Make changes. See them live. Instantaneously! Remix ensures you don't have to refresh your page every time you tweak your code.
+- **Static Site Generation**: With Remix, you can generate static pages for a performance boost, which in turn amplifies your SEO game.
+- **Internationalization**: Dreaming of global dominance? Remix has you covered with its innate support for multiple languages.
+
+## What is Next.js?
+
+Enter **Next.js** - a React framework that has garnered immense popularity and is often juxtaposed with Remix when it comes to building Shopify stores.
+
+Some of its sterling features include:
+
+- **Static Site Generation**: Just like Remix, Next.js offers static page generation for performance and SEO benefits.
+- **Server-side Rendering**: Render your pages on the server, ensuring quicker load times and improved SEO.
+- **Routing**: A robust routing system negates the need for additional code, making dynamic routes a breeze.
+
+## The Great Debate: Remix or Next.js for Shopify?
+
+Choosing between Remix and Next.js is not about figuring out which one is universally better, but discerning which aligns more closely with your specific requirements.
+
+If you're on the hunt for something intuitive with commendable performance metrics, Remix might just be your alley. On the flip side, if server-side rendering and a potent routing system are at the top of your priority list, Next.js beckons.
+
+For the fence-sitters, a hands-on experience with both frameworks can provide clarity.
+
+## Code Examples
+
+To better understand the practical implementations, let's glance over some code snippets for building a Shopify store with both frameworks:
+
+### Remix:
+
+<CodeBlockWithCopy language='jsx'>
+
+{`import { useState, useEffect } from "react";
+
+export default function App() {
+  const [products, setProducts] = useState([]);
+
+  const fetchProducts = async () => {
+    const response = await fetch("/api/products");
+    const products = await response.json();
+    setProducts(products);
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  return (
+    <div>
+      <h1>My Shopify Store</h1>
+      <ul>
+        {products.map((product) => (
+          <li key={product.id}>{product.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}`}
+</CodeBlockWithCopy>
+
+## Next.js:
+<CodeBlockWithCopy language='jsx'>
+{`import React from "react";
+
+const Products = ({ products }) => {
+  return (
+    <ul>
+      {products.map((product) => (
+        <li key={product.id}>{product.name}</li>
+      ))}
+    </ul>
+  );
+};
+
+export async function getStaticProps() {
+  const response = await fetch("/api/products");
+  const products = await response.json();
+
+  return {
+    props: {
+      products,
+    },
+  };
+}
+
+export default Products;`}
+</CodeBlockWithCopy>
+_Note: As always, ensure you understand any code before integrating it into your project._
+
+## In Conclusion
+Whether it's Remix with its modern touch or Next.js with its extensive capabilities, both serve as exemplary frameworks for building Shopify stores. Your unique project needs and personal preferences will guide your final choice. Dive in, try them both, and may your Shopify store shine in all its glory!
