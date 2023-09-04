@@ -28,6 +28,13 @@ export function Offices({ invert = false, ...props }) {
         </Office>
       </li>
       <li>
+      <Office name="Winston Salem" invert={invert}>
+      601 N Liberty St
+          <br />
+          Winston Salem, NC 27107
+        </Office>
+      </li>
+      <li>
       <Office name="Switzerland" invert={invert}>
           Rte de Meyrin 123
           <br />
