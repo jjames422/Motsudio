@@ -12,7 +12,7 @@ import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPyTorch from '@/images/technology/pytorch-light.svg'
 import logoRedis from '@/images/technology/redis-light.svg'
 import logoAngular from '@/images/technology/angular-light.svg'
-// import logoFirebase from '@/images/technology/firebase-light.svg'
+import logoFirebase from '@/images/technology/firebase-light.svg'
 import logoNextjs from '@/images/technology/next-js-light.svg'
 import logoShopify from '@/images/technology/shopify-light.svg'
 import logoReact from '@/images/technology/react-light.svg'
@@ -28,7 +28,7 @@ const tech = [
   ['PyTorch', logoPyTorch],
   ['Redis', logoRedis],
   ['Angular', logoAngular],
-  // ['Firebase', logoFirebase],
+  ['Firebase', logoFirebase],
   ['Next.js', logoNextjs],
   ['Shopify', logoShopify],
   ['React', logoReact],
