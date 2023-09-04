@@ -9,14 +9,14 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPyTorch from '@/images/technology/pytorch/pytorch-light.svg'
-import logoRedis from '@/images/technology/redis/redis-light.svg'
-import logoAngular from '@/images/technology/angular/angular-light.svg'
-import logoFirebase from '@/images/technology/firebase/firebase-light.svg'
-import logoNextjs from '@/images/technology/nextjs/next-js-light.svg'
-import logoShopify from '@/images/technology/shopify/shopify-light.svg'
-import logoReact from '@/images/technology/react/react-light.svg'
-import logoVue from '@/images/technology/vuejs/vuejs-light.svg'
+import logoPyTorch from '@/images/technology/pytorch-light.svg'
+import logoRedis from '@/images/technology/redis-light.svg'
+import logoAngular from '@/images/technology/angular-light.svg'
+// import logoFirebase from '@/images/technology/firebase-light.svg'
+import logoNextjs from '@/images/technology/next-js-light.svg'
+import logoShopify from '@/images/technology/shopify-light.svg'
+import logoReact from '@/images/technology/react-light.svg'
+import logoVue from '@/images/technology/vuejs-light.svg'
 
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
@@ -28,7 +28,7 @@ const tech = [
   ['PyTorch', logoPyTorch],
   ['Redis', logoRedis],
   ['Angular', logoAngular],
-  ['Firebase', logoFirebase],
+  // ['Firebase', logoFirebase],
   ['Next.js', logoNextjs],
   ['Shopify', logoShopify],
   ['React', logoReact],
