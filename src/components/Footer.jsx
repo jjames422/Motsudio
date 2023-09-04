@@ -151,7 +151,7 @@ export function Footer() {
             <Logo className="h-8 px-4" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Motstudio Agency Inc. {new Date().getFullYear()}
+            © Motstudio Agency, a division of Motsinger Oil Co {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
